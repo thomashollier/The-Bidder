@@ -18,6 +18,75 @@ You give it a screenplay. It gives you back:
 2. **A screenplay** — Plain text, PDF, or pasted into the conversation. Any format Claude can read.
 3. **This pipeline folder** — The prompts, schemas, and example files in this repo.
 
+## Automated Pipeline (Python Script)
+
+The fastest way to run the full pipeline is with the included Python script. It calls `claude -p` for each stage automatically and saves all outputs to a folder.
+
+### Prerequisites
+
+- **Python 3.10+** — Check with `python3 --version`
+- **Claude Code CLI** — Install from [docs.anthropic.com/en/docs/claude-code](https://docs.anthropic.com/en/docs/claude-code), then run `claude login` to authenticate
+
+### Basic Usage
+
+```bash
+# Run the full pipeline on a screenplay
+python run_pipeline.py my_script.txt
+
+# With production assumptions
+python run_pipeline.py my_script.txt --assumptions assumptions.json
+
+# Specify output directory and model
+python run_pipeline.py my_script.txt -o my_project/ --model opus
+
+# With a custom rate card for bid generation
+python run_pipeline.py my_script.txt -a assumptions.json -r rates.json -o my_project/
+```
+
+### Resuming a Run
+
+If a stage fails or you want to re-run later stages after editing an earlier output, use `--start-stage`:
+
+```bash
+# Re-run from stage 3 (uses stage 1-2 outputs already in the output dir)
+python run_pipeline.py my_script.txt --start-stage 3 -o my_project/
+
+# Re-run only the bid with a new rate card
+python run_pipeline.py my_script.txt --start-stage 5 -o my_project/ -r new_rates.json
+```
+
+### What It Produces
+
+```
+output/
+├── stage_1_vfx_flags.json      — Every VFX moment flagged scene by scene
+├── stage_2_sequences.json      — Scenes grouped into VFX production sequences
+├── stage_3_shots.json          — Individual VFX shots with complexity ratings
+├── stage_4_assets.json         — Consolidated asset inventory
+└── stage_5_bid.json            — Cost estimate, schedule, department breakdown
+```
+
+### All Options
+
+```
+python run_pipeline.py --help
+
+positional arguments:
+  screenplay              Path to screenplay file (plain text or PDF)
+
+options:
+  --assumptions, -a       Path to production assumptions JSON file
+  --output-dir, -o        Directory for output files (default: output/)
+  --rate-card, -r         Path to custom rate card JSON for bid generation
+  --start-stage, -s       Stage to start from (1-5, default: 1)
+  --model, -m             Claude model to use (sonnet, opus, haiku)
+  --verbose, -v           Print extra debug information
+```
+
+## Manual Pipeline (Claude Web or CLI)
+
+If you prefer to run stages interactively with review between each step:
+
 ## Quick Start
 
 ### Step 1: Start a Claude Project (recommended)
@@ -136,6 +205,7 @@ Claude Code can read the files directly from disk, write output files, and manag
 ## File Structure
 
 ```
+run_pipeline.py                  — Automated pipeline runner (Python)
 pipeline/
 ├── orchestrator.md              — Full pipeline documentation and flow
 ├── schemas/
