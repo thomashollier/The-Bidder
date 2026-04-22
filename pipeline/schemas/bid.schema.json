@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx-breakdown/bid",
+  "title": "VFX Bid Estimate",
+  "description": "Cost and schedule estimate derived from the shot breakdown and asset inventory. Translates complexity ratings and asset builds into artist-days, department allocations, and budget ranges.",
+  "type": "object",
+  "required": ["project_name", "summary", "department_breakdown", "asset_bids", "shot_bids"],
+  "properties": {
+    "project_name": { "type": "string" },
+    "bid_date": { "type": "string", "format": "date" },
+    "bid_version": { "type": "string" },
+    "currency": { "type": "string", "default": "USD" },
+    "rate_card": {
+      "type": "object",
+      "description": "Day rates used for this estimate",
+      "properties": {
+        "junior_artist_day": { "type": "number" },
+        "mid_artist_day": { "type": "number" },
+        "senior_artist_day": { "type": "number" },
+        "lead_day": { "type": "number" },
+        "supervisor_day": { "type": "number" },
+        "producer_day": { "type": "number" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total_vfx_shots", "total_assets", "total_artist_weeks", "schedule_weeks", "cost_range"],
+      "properties": {
+        "total_vfx_shots": { "type": "integer" },
+        "total_assets": { "type": "integer" },
+        "total_artist_weeks": { "type": "number" },
+        "schedule_weeks": {
+          "type": "object",
+          "properties": {
+            "minimum": { "type": "number" },
+            "recommended": { "type": "number" }
+          }
+        },
+        "cost_range": {
+          "type": "object",
+          "properties": {
+            "low": { "type": "number" },
+            "high": { "type": "number" },
+            "notes": { "type": "string", "description": "What drives the range (e.g., 'Range reflects uncertainty in creature complexity')" }
+          }
+        }
+      }
+    },
+    "department_breakdown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["department", "artist_weeks", "peak_headcount"],
+        "properties": {
+          "department": {
+            "type": "string",
+            "enum": [
+              "Previz",
+              "Matchmove",
+              "Roto_Paint",
+              "Modeling",
+              "Texturing",
+              "Rigging",
+              "Animation",
+              "FX_Simulation",
+              "Lighting",
+              "Compositing",
+              "Supervision",
+              "Production_Management",
+              "Editorial",
+              "Motion_Graphics"
+            ]
+          },
+          "artist_weeks": {
+            "type": "number",
+            "description": "Total artist-weeks for this department"
+          },
+          "peak_headcount": {
+            "type": "integer",
+            "description": "Maximum concurrent artists needed"
+          },
+          "seniority_mix": {
+            "type": "object",
+            "properties": {
+              "junior_pct": { "type": "number" },
+              "mid_pct": { "type": "number" },
+              "senior_pct": { "type": "number" }
+            }
+          },
+          "estimated_cost": { "type": "number" }
+        }
+      }
+    },
+    "asset_bids": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["asset_number", "asset_name", "build_weeks"],
+        "properties": {
+          "asset_number": { "type": "integer" },
+          "asset_name": { "type": "string" },
+          "build_weeks": {
+            "type": "object",
+            "properties": {
+              "modeling": { "type": "number" },
+              "texturing": { "type": "number" },
+              "rigging": { "type": "number" },
+              "lookdev": { "type": "number" },
+              "total": { "type": "number" }
+            }
+          },
+          "estimated_cost": { "type": "number" }
+        }
+      }
+    },
+    "shot_bids": {
+      "type": "array",
+      "description": "Per-shot cost breakdown — can be grouped by complexity tier or listed individually",
+      "items": {
+        "type": "object",
+        "properties": {
+          "complexity_tier": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "shot_count": { "type": "integer" },
+          "avg_artist_days_per_shot": { "type": "number" },
+          "departments_involved": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "tier_total_cost": { "type": "number" }
+        }
+      }
+    }
+  }
+}

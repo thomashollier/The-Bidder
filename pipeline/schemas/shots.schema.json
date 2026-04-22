@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx-breakdown/shots",
+  "title": "VFX Shot Breakdown",
+  "description": "Per-shot VFX detail. Every shot that requires any visual effects work gets an entry here with its complexity rating, work classification, and asset dependencies.",
+  "type": "object",
+  "required": ["project_name", "shots"],
+  "properties": {
+    "project_name": { "type": "string" },
+    "total_vfx_shots": { "type": "integer" },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_number",
+          "sequence_number",
+          "sequence_name",
+          "scene_number",
+          "description",
+          "complexity",
+          "work_type",
+          "assets_required"
+        ],
+        "properties": {
+          "shot_number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Global sequential shot number across the project"
+          },
+          "sequence_number": {
+            "type": "integer",
+            "description": "Reference to parent sequence"
+          },
+          "sequence_name": {
+            "type": "string"
+          },
+          "scene_number": {
+            "type": "string",
+            "description": "Script scene number (may include letters like '15A')"
+          },
+          "page_number": {
+            "type": "string",
+            "description": "Script page reference"
+          },
+          "description": {
+            "type": "string",
+            "description": "What happens in this shot and what VFX work is needed (e.g., 'Wide shot of CG robot walking through corridor - full digital replacement with reflection pass')"
+          },
+          "complexity": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5,
+            "description": "0=no VFX (editorial ref only), 1=simple (paint/cleanup/screen replace), 2=standard (wire removal/matte painting), 3=moderate (CG element integration/set extension), 4=complex (full CG character/simulation), 5=hero (digital double/hero FX/complex multi-element)"
+          },
+          "work_type": {
+            "type": "string",
+            "enum": ["2D", "3D", "2D/3D"],
+            "description": "2D=comp/paint/roto only, 3D=CG elements required, 2D/3D=both disciplines"
+          },
+          "assets_required": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "List of asset references needed (format: 'AssetNumber-AssetName', e.g., '01-Mt. Luca Cliff')"
+          },
+          "vfx_tasks": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "wire_removal",
+                "rig_removal",
+                "cleanup",
+                "screen_replacement",
+                "sky_replacement",
+                "bg_replacement",
+                "set_extension",
+                "matte_painting",
+                "cg_character",
+                "digital_double",
+                "cg_vehicle",
+                "cg_creature",
+                "cg_prop",
+                "cg_environment",
+                "particle_fx",
+                "fluid_sim",
+                "destruction",
+                "fire_smoke",
+                "blood_gore",
+                "weather_fx",
+                "roto",
+                "matchmove",
+                "face_replacement",
+                "de_aging",
+                "beauty_work",
+                "comp_integration",
+                "motion_graphics",
+                "hologram_ui",
+                "day_for_night",
+                "speed_ramp",
+                "crowd_replication",
+                "reflection_pass"
+              ]
+            },
+            "description": "Specific VFX disciplines/tasks required"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional context, creative notes, or technical considerations"
+          }
+        }
+      }
+    }
+  }
+}

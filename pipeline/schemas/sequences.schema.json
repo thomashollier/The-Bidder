@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx-breakdown/sequences",
+  "title": "VFX Sequence Breakdown",
+  "description": "Sequence-level VFX analysis grouping scenes into logical production units. Each sequence represents a contiguous narrative block that shares VFX methodology, location, or production approach.",
+  "type": "object",
+  "required": ["project_name", "sequences"],
+  "properties": {
+    "project_name": { "type": "string" },
+    "total_sequences": { "type": "integer" },
+    "total_estimated_vfx_shots": { "type": "integer" },
+    "sequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sequence_number",
+          "sequence_name",
+          "scenes",
+          "estimated_shot_count",
+          "vfx_requirements",
+          "previz",
+          "led_stage",
+          "assumptions"
+        ],
+        "properties": {
+          "sequence_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sequence_name": {
+            "type": "string",
+            "description": "Descriptive name (e.g., 'Crash Test Lab Introduction')"
+          },
+          "scenes": {
+            "type": "string",
+            "description": "Scene range from script (e.g., '17-22' or '14')"
+          },
+          "page_range": {
+            "type": "string",
+            "description": "Page range from script (e.g., '14-17')"
+          },
+          "estimated_shot_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Estimated number of VFX shots in this sequence"
+          },
+          "vfx_requirements": {
+            "type": "string",
+            "description": "Prose summary of all VFX work needed (e.g., 'CG robot replacement; monitor inserts; set extension for wide shots')"
+          },
+          "previz": {
+            "type": "object",
+            "required": ["needed", "complexity"],
+            "properties": {
+              "needed": {
+                "type": "boolean"
+              },
+              "description": {
+                "type": "string",
+                "description": "What needs previz and why (e.g., 'Fall sequence choreography and camera blocking')"
+              },
+              "complexity": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 5,
+                "description": "0=none, 1=simple blocking, 2=camera moves, 3=action choreography, 4=complex multi-element, 5=hero sequence full previz"
+              }
+            }
+          },
+          "led_stage": {
+            "type": "object",
+            "required": ["recommended"],
+            "properties": {
+              "recommended": {
+                "type": "boolean"
+              },
+              "description": {
+                "type": "string",
+                "description": "What LED stage would provide (e.g., 'Driving backgrounds for vehicle interiors - clean in-camera')"
+              },
+              "in_camera_benefit": {
+                "type": "string",
+                "description": "What shots become clean in-camera with LED (reducing post)"
+              }
+            }
+          },
+          "assumptions": {
+            "type": "string",
+            "description": "Sequence-specific production assumptions and notes"
+          }
+        }
+      }
+    }
+  }
+}

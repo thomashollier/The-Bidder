@@ -1,0 +1,385 @@
+{
+  "project_name": "Ex Machina",
+  "bid_date": "2026-04-22",
+  "bid_version": "1.0",
+  "currency": "USD",
+  "rate_card": {
+    "junior_artist_day": 450,
+    "mid_artist_day": 650,
+    "senior_artist_day": 900,
+    "lead_day": 1100,
+    "supervisor_day": 1400,
+    "producer_day": 1200
+  },
+  "summary": {
+    "total_vfx_shots": 80,
+    "total_assets": 17,
+    "total_artist_weeks": 182,
+    "schedule_weeks": {
+      "minimum": 28,
+      "recommended": 36
+    },
+    "cost_range": {
+      "low": 2800000,
+      "high": 3900000,
+      "notes": "Range driven primarily by: (1) Ava CG body quality — hero photoreal character at close-up quality is the single largest variable; (2) Number of revision rounds on Ava face-to-body transition; (3) Transformation sequence complexity — skin application FX could be simpler or more elaborate depending on creative direction; (4) Whether LED wall is used for Ava's room (reduces 10-15 comp shots but adds VP content cost)."
+    }
+  },
+  "department_breakdown": [
+    {
+      "department": "Previz",
+      "artist_weeks": 6,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 50, "senior_pct": 50},
+      "estimated_cost": 45000
+    },
+    {
+      "department": "Matchmove",
+      "artist_weeks": 14,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 30, "mid_pct": 50, "senior_pct": 20},
+      "estimated_cost": 95000
+    },
+    {
+      "department": "Roto_Paint",
+      "artist_weeks": 16,
+      "peak_headcount": 3,
+      "seniority_mix": {"junior_pct": 40, "mid_pct": 40, "senior_pct": 20},
+      "estimated_cost": 100000
+    },
+    {
+      "department": "Modeling",
+      "artist_weeks": 20,
+      "peak_headcount": 3,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 40, "senior_pct": 60},
+      "estimated_cost": 170000
+    },
+    {
+      "department": "Texturing",
+      "artist_weeks": 12,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 50, "senior_pct": 50},
+      "estimated_cost": 95000
+    },
+    {
+      "department": "Rigging",
+      "artist_weeks": 10,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 30, "senior_pct": 70},
+      "estimated_cost": 90000
+    },
+    {
+      "department": "Animation",
+      "artist_weeks": 18,
+      "peak_headcount": 3,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 40, "senior_pct": 60},
+      "estimated_cost": 150000
+    },
+    {
+      "department": "FX_Simulation",
+      "artist_weeks": 12,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 30, "senior_pct": 70},
+      "estimated_cost": 105000
+    },
+    {
+      "department": "Lighting",
+      "artist_weeks": 20,
+      "peak_headcount": 3,
+      "seniority_mix": {"junior_pct": 20, "mid_pct": 40, "senior_pct": 40},
+      "estimated_cost": 155000
+    },
+    {
+      "department": "Compositing",
+      "artist_weeks": 28,
+      "peak_headcount": 4,
+      "seniority_mix": {"junior_pct": 20, "mid_pct": 40, "senior_pct": 40},
+      "estimated_cost": 215000
+    },
+    {
+      "department": "Motion_Graphics",
+      "artist_weeks": 6,
+      "peak_headcount": 1,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 60, "senior_pct": 40},
+      "estimated_cost": 45000
+    },
+    {
+      "department": "Supervision",
+      "artist_weeks": 12,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 0, "senior_pct": 100},
+      "estimated_cost": 170000
+    },
+    {
+      "department": "Production_Management",
+      "artist_weeks": 8,
+      "peak_headcount": 2,
+      "seniority_mix": {"junior_pct": 0, "mid_pct": 50, "senior_pct": 50},
+      "estimated_cost": 70000
+    }
+  ],
+  "asset_bids": [
+    {
+      "asset_number": 1,
+      "asset_name": "Ava - CG Robot Body",
+      "build_weeks": {
+        "modeling": 8,
+        "texturing": 4,
+        "rigging": 6,
+        "lookdev": 4,
+        "total": 22
+      },
+      "estimated_cost": 350000
+    },
+    {
+      "asset_number": 2,
+      "asset_name": "Ava - Internal Mechanisms",
+      "build_weeks": {
+        "modeling": 3,
+        "texturing": 2,
+        "rigging": 1,
+        "lookdev": 2,
+        "total": 8
+      },
+      "estimated_cost": 120000
+    },
+    {
+      "asset_number": 3,
+      "asset_name": "Ava - Clothing Interaction",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 3,
+        "total": 3
+      },
+      "estimated_cost": 50000
+    },
+    {
+      "asset_number": 4,
+      "asset_name": "Ava - Synthetic Skin Application",
+      "build_weeks": {
+        "modeling": 1,
+        "texturing": 2,
+        "rigging": 0,
+        "lookdev": 3,
+        "total": 6
+      },
+      "estimated_cost": 90000
+    },
+    {
+      "asset_number": 5,
+      "asset_name": "Ava - Digital Double (Security Cam)",
+      "build_weeks": {
+        "modeling": 0.5,
+        "texturing": 0.5,
+        "rigging": 0.5,
+        "lookdev": 0.5,
+        "total": 2
+      },
+      "estimated_cost": 25000
+    },
+    {
+      "asset_number": 6,
+      "asset_name": "Kyoko - Robot Reveal",
+      "build_weeks": {
+        "modeling": 2,
+        "texturing": 1.5,
+        "rigging": 1,
+        "lookdev": 1.5,
+        "total": 6
+      },
+      "estimated_cost": 90000
+    },
+    {
+      "asset_number": 7,
+      "asset_name": "Previous Robot Models",
+      "build_weeks": {
+        "modeling": 1,
+        "texturing": 1,
+        "rigging": 0,
+        "lookdev": 1,
+        "total": 3
+      },
+      "estimated_cost": 40000
+    },
+    {
+      "asset_number": 8,
+      "asset_name": "Facility Entrance - CG Integration",
+      "build_weeks": {
+        "modeling": 1,
+        "texturing": 1,
+        "rigging": 0,
+        "lookdev": 1,
+        "total": 3
+      },
+      "estimated_cost": 40000
+    },
+    {
+      "asset_number": 9,
+      "asset_name": "Mountain Landscape",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 3,
+        "total": 3
+      },
+      "estimated_cost": 45000
+    },
+    {
+      "asset_number": 10,
+      "asset_name": "Estate Exterior - Matte Painting",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 2,
+        "total": 2
+      },
+      "estimated_cost": 30000
+    },
+    {
+      "asset_number": 14,
+      "asset_name": "CG Wound - Arm Cut",
+      "build_weeks": {
+        "modeling": 0.5,
+        "texturing": 0.5,
+        "rigging": 0,
+        "lookdev": 1,
+        "total": 2
+      },
+      "estimated_cost": 25000
+    },
+    {
+      "asset_number": 15,
+      "asset_name": "Blood FX",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 2,
+        "total": 2
+      },
+      "estimated_cost": 25000
+    },
+    {
+      "asset_number": 18,
+      "asset_name": "Screen Content - Bluebook UI",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 3,
+        "total": 3
+      },
+      "estimated_cost": 35000
+    },
+    {
+      "asset_number": 19,
+      "asset_name": "Screen Content - Security Feeds",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 1,
+        "total": 1
+      },
+      "estimated_cost": 15000
+    },
+    {
+      "asset_number": 20,
+      "asset_name": "Screen Content - Monitoring",
+      "build_weeks": {
+        "modeling": 0,
+        "texturing": 0,
+        "rigging": 0,
+        "lookdev": 0.5,
+        "total": 0.5
+      },
+      "estimated_cost": 5000
+    }
+  ],
+  "shot_bids": [
+    {
+      "complexity_tier": 1,
+      "shot_count": 16,
+      "avg_artist_days_per_shot": 1.5,
+      "departments_involved": ["Compositing", "Roto_Paint"],
+      "tier_total_cost": 60000
+    },
+    {
+      "complexity_tier": 2,
+      "shot_count": 14,
+      "avg_artist_days_per_shot": 4,
+      "departments_involved": ["Compositing", "Roto_Paint", "Matchmove"],
+      "tier_total_cost": 140000
+    },
+    {
+      "complexity_tier": 3,
+      "shot_count": 14,
+      "avg_artist_days_per_shot": 8,
+      "departments_involved": ["Compositing", "Matchmove", "Lighting", "Modeling"],
+      "tier_total_cost": 290000
+    },
+    {
+      "complexity_tier": 4,
+      "shot_count": 27,
+      "avg_artist_days_per_shot": 14,
+      "departments_involved": ["Compositing", "Matchmove", "Lighting", "Animation", "FX_Simulation"],
+      "tier_total_cost": 800000
+    },
+    {
+      "complexity_tier": 5,
+      "shot_count": 9,
+      "avg_artist_days_per_shot": 28,
+      "departments_involved": ["Compositing", "Matchmove", "Lighting", "Animation", "FX_Simulation", "Modeling"],
+      "tier_total_cost": 560000
+    }
+  ],
+  "cost_drivers": [
+    {
+      "rank": 1,
+      "item": "Ava CG Robot Body — Asset Build + 44 Shot Appearances",
+      "estimated_cost": 1100000,
+      "percentage_of_total": 34,
+      "notes": "Hero photoreal CG character at MCU quality is the single largest cost center. Asset build ($350K) + shot work across 44 shots including hero close-ups. Quality of face-to-body transition is the primary creative variable."
+    },
+    {
+      "rank": 2,
+      "item": "Ava Internal Mechanisms + FX (Clothing, Skin Application)",
+      "estimated_cost": 380000,
+      "percentage_of_total": 12,
+      "notes": "Supporting FX assets for Ava — internal mechanism animation, cloth interaction for dressing scene, and skin application for transformation. These amplify the hero character work."
+    },
+    {
+      "rank": 3,
+      "item": "Escape & Confrontation Sequence (Seq 11)",
+      "estimated_cost": 350000,
+      "percentage_of_total": 11,
+      "notes": "14 shots including Kyoko reveal, dual stabbing, CG character in new lighting environment, and Nathan's death. Most complex sequence with mixed CG/practical violence."
+    },
+    {
+      "rank": 4,
+      "item": "Transformation Sequence (Seq 12)",
+      "estimated_cost": 280000,
+      "percentage_of_total": 9,
+      "notes": "7 shots but includes the mirror shot (most complex single VFX shot in the film) and progressive skin application FX. Hero emotional and visual climax."
+    },
+    {
+      "rank": 5,
+      "item": "Screen Content Design Package",
+      "estimated_cost": 100000,
+      "percentage_of_total": 3,
+      "notes": "18 screen replacement shots across the film requiring ~12 unique motion graphics designs (Bluebook UI, security feeds, monitoring). Volume work but relatively straightforward."
+    }
+  ],
+  "led_vp_savings_analysis": {
+    "applicable_sequences": [3, 4, 5, 6, 9],
+    "shots_potentially_eliminated": 12,
+    "estimated_post_savings": 150000,
+    "estimated_vp_content_cost": 80000,
+    "net_savings": 70000,
+    "notes": "LED wall for Ava's room windows would eliminate ~12 window/BG comp shots and provide better interactive lighting on glass walls and CG character. VP content cost is stock forest footage adaptation. Net savings modest ($70K) but significant quality improvement in glass reflections and interactive lighting on Ava's CG body."
+  }
+}

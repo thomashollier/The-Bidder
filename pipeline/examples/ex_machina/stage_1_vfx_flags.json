@@ -1,0 +1,599 @@
+[
+  {
+    "scene_number": "1",
+    "scene_heading": "INT. BLUEBOOK OFFICE - DAY",
+    "page_range": "1",
+    "vfx_flags": [
+      {
+        "line_reference": "Caleb's computer screen shows competition win notification",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Computer monitor showing Bluebook interface and competition win message — screen replacement in post",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb wins a company competition at his desk at Bluebook (Google-like company)"
+  },
+  {
+    "scene_number": "2",
+    "scene_heading": "EXT. MOUNTAINS / HELICOPTER - DAY",
+    "page_range": "1-2",
+    "vfx_flags": [
+      {
+        "line_reference": "We've been flying over his estate for the past two hours",
+        "vfx_type": "explicit",
+        "category": "cg_environment",
+        "description": "Aerial shots over vast mountain/forest estate — helicopter plates over Norwegian landscape with possible matte painting extensions for Nathan's property boundary",
+        "initial_complexity_estimate": 3
+      },
+      {
+        "line_reference": "Helicopter landing, Caleb exits",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Helicopter landing on remote helipad — potential wire/rig removal, rotor downwash enhancement, aerial plate stabilization",
+        "initial_complexity_estimate": 2
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb arrives by helicopter over vast mountain estate, pilot drops him off"
+  },
+  {
+    "scene_number": "3",
+    "scene_heading": "EXT. ESTATE GROUNDS - RIVER PATH - DAY",
+    "page_range": "2-3",
+    "vfx_flags": [
+      {
+        "line_reference": "Follow the river",
+        "vfx_type": "implied",
+        "category": "matte_painting",
+        "description": "Caleb walks along river toward facility — wide establishing shots likely need matte painting extension to show scale of wilderness and hint at hidden facility",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Caleb approaches facility entrance console",
+        "vfx_type": "implied",
+        "category": "set_extension",
+        "description": "Facility entrance integrated into natural landscape — CG/matte painting to blend practical set piece into Norwegian location photography",
+        "initial_complexity_estimate": 3
+      },
+      {
+        "line_reference": "Please approach the console and face the screen",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Facial recognition console screen — screen replacement with UI graphics",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb follows river to discover the hidden research facility entrance"
+  },
+  {
+    "scene_number": "4",
+    "scene_heading": "INT. FACILITY - CORRIDORS / LIVING AREA - DAY",
+    "page_range": "3-5",
+    "vfx_flags": [
+      {
+        "line_reference": "Facility corridors with automated doors and keycard access",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Practical set corridors — minor cleanup, possible LED door lock indicators as screen replacements",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb enters facility, meets Nathan, gets tour of living quarters"
+  },
+  {
+    "scene_number": "5",
+    "scene_heading": "INT. FACILITY - CALEB'S ROOM - DAY",
+    "page_range": "5-6",
+    "vfx_flags": [],
+    "has_vfx": false,
+    "scene_summary": "Nathan shows Caleb his windowless room — subterranean research facility"
+  },
+  {
+    "scene_number": "6",
+    "scene_heading": "INT. FACILITY - NATHAN'S OFFICE / LAB - DAY",
+    "page_range": "6-8",
+    "vfx_flags": [
+      {
+        "line_reference": "Nathan explains the Turing test, shows Caleb the lab setup",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Lab monitors and displays showing AI data, Bluebook search data visualizations — screen replacements",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Nathan explains the experiment — Caleb will conduct a Turing test on an AI"
+  },
+  {
+    "scene_number": "7",
+    "scene_heading": "INT. FACILITY - AVA'S ROOM / OBSERVATION CORRIDOR - DAY",
+    "page_range": "9-14",
+    "vfx_flags": [
+      {
+        "line_reference": "Ava revealed — humanoid robot with visible mechanical body, human face",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "SESSION 1: First reveal of Ava's robot body. Actress on set with tracking markers — full CG body replacement for torso, arms, legs, and neck showing transparent mechanical structure with visible internal mechanisms. Face and hands are real actress. Hero VFX moment.",
+        "initial_complexity_estimate": 5
+      },
+      {
+        "line_reference": "Ava walks, sits, gestures during conversation",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Multiple shots of Ava in full body and medium shots — every angle showing mechanical parts requires CG body replacement with matched lighting, shadows, and reflections on glass walls",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Observation through glass wall",
+        "vfx_type": "implied",
+        "category": "reflection_pass",
+        "description": "Glass wall between Caleb and Ava creates complex reflections — Ava's CG body must reflect correctly in glass, Caleb's reflections on her side, etc.",
+        "initial_complexity_estimate": 3
+      },
+      {
+        "line_reference": "CCTV monitoring view of Ava",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Security camera feed on Nathan's monitoring station showing Ava in her room — screen replacement with degraded video quality version of the CG character",
+        "initial_complexity_estimate": 2
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "First Turing test session — Caleb meets Ava through glass wall, sees her robot body for the first time"
+  },
+  {
+    "scene_number": "8",
+    "scene_heading": "INT. FACILITY - LIVING AREA - EVENING",
+    "page_range": "14-16",
+    "vfx_flags": [
+      {
+        "line_reference": "Nathan and Caleb discuss the session over drinks",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Background monitors visible in living area — screen replacements with ambient content",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Post-Session 1 debrief — Nathan and Caleb discuss Ava's consciousness"
+  },
+  {
+    "scene_number": "9",
+    "scene_heading": "INT. FACILITY - CALEB'S ROOM - NIGHT",
+    "page_range": "16-17",
+    "vfx_flags": [
+      {
+        "line_reference": "Caleb on laptop researching AI",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Laptop screen showing Bluebook search results and AI research — screen replacement",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb alone in his room processing the first session, researching on laptop"
+  },
+  {
+    "scene_number": "10",
+    "scene_heading": "INT. FACILITY - AVA'S ROOM - DAY",
+    "page_range": "17-23",
+    "vfx_flags": [
+      {
+        "line_reference": "Session 2 — Ava shows Caleb her drawings, more animated interaction",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "SESSION 2: Ava's CG body replacement continues — more dynamic movement as she shows drawings, stands, walks. Multiple shot sizes. Hands interacting with paper (real hands holding drawings, CG wrist/arm transition).",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Ava holds up drawings to the glass",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Close-ups of Ava's arms holding drawings — CG arm replacement with careful transition from real fingers to mechanical forearm. Reflection in glass of CG body.",
+        "initial_complexity_estimate": 4
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Session 2 — Ava is more personal, shows drawings, asks about the outside world"
+  },
+  {
+    "scene_number": "11",
+    "scene_heading": "INT. FACILITY - VARIOUS / POWER CUT SEQUENCE - NIGHT",
+    "page_range": "23-26",
+    "vfx_flags": [
+      {
+        "line_reference": "Power cut. Backup power activated. Full facility lock-down",
+        "vfx_type": "explicit",
+        "category": "cleanup",
+        "description": "First power cut — lighting transition from normal to red emergency. Practical lighting change with possible CG enhancement for Ava's internal components glowing/reacting in the dark.",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Ava speaks to Caleb during power cut — warns him about Nathan",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava in red emergency lighting — CG body replacement with dramatic red illumination, internal mechanisms visible/glowing differently in low light. Key dramatic VFX moment.",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Security cameras go down during power cut",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Monitoring screens showing static/loss of feed — screen replacement",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "First power cut — Ava uses the blackout to privately warn Caleb that Nathan cannot be trusted"
+  },
+  {
+    "scene_number": "12",
+    "scene_heading": "INT. FACILITY - LIVING AREA / KITCHEN - NIGHT",
+    "page_range": "26-28",
+    "vfx_flags": [
+      {
+        "line_reference": "Caleb encounters Kyoko serving food silently",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Kyoko appears — no VFX needed yet as she appears fully human at this point. Minor set cleanup if needed.",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb meets Kyoko, Nathan's silent servant — no robot reveal yet"
+  },
+  {
+    "scene_number": "13",
+    "scene_heading": "INT. FACILITY - AVA'S ROOM - DAY",
+    "page_range": "28-35",
+    "vfx_flags": [
+      {
+        "line_reference": "Session 3 — Ava puts on clothes, stockings, wig over her robot body",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "SESSION 3: Ava dresses herself in human clothes over robot body — CG body visible as she pulls on stockings over mechanical legs, puts on dress. Transition shots from robot to clothed. Hero character animation moment.",
+        "initial_complexity_estimate": 5
+      },
+      {
+        "line_reference": "Ava with wig and dress — almost human appearance",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava in clothes with only face visible as human — CG neck/collar area where mechanical meets clothed body. Subtle but critical for believability.",
+        "initial_complexity_estimate": 3
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Session 3 — Ava dresses up for Caleb, showing desire to appear human"
+  },
+  {
+    "scene_number": "14",
+    "scene_heading": "EXT. ESTATE - FOREST / WATERFALL - DAY",
+    "page_range": "35-38",
+    "vfx_flags": [
+      {
+        "line_reference": "Nathan and Caleb walk outside through forest to waterfall",
+        "vfx_type": "implied",
+        "category": "matte_painting",
+        "description": "Exterior Norwegian landscape — wide establishing shots may need matte painting extension to establish remoteness. Waterfall location likely practical.",
+        "initial_complexity_estimate": 2
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Nathan and Caleb discuss AI and consciousness while walking in the forest"
+  },
+  {
+    "scene_number": "15",
+    "scene_heading": "INT. FACILITY - NATHAN'S PRIVATE LAB - NIGHT",
+    "page_range": "38-42",
+    "vfx_flags": [
+      {
+        "line_reference": "Caleb explores Nathan's lab, finds previous robot models in closets",
+        "vfx_type": "explicit",
+        "category": "cleanup",
+        "description": "Previous robot iterations hanging in closets — practical mannequins/prosthetics with CG enhancement for mechanical detail, exposed wiring, internal glow. 3-5 distinct robot bodies visible.",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Robot models showing evolution of design from crude to refined",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Close-ups of previous robot models — practical with CG enhancement to add mechanical detail, translucent skin effects, and internal mechanism visibility consistent with Ava's design language",
+        "initial_complexity_estimate": 3
+      },
+      {
+        "line_reference": "Security footage on Nathan's computer",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Nathan's monitoring system showing archived security footage of previous robot models — screen replacement with VFX-within-VFX (security cam footage of CG robots)",
+        "initial_complexity_estimate": 2
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb discovers Nathan's closet of previous robot iterations — evidence of many failed models"
+  },
+  {
+    "scene_number": "16",
+    "scene_heading": "INT. FACILITY - AVA'S ROOM - DAY",
+    "page_range": "42-48",
+    "vfx_flags": [
+      {
+        "line_reference": "Session 4 — deeper emotional connection, another power cut",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "SESSION 4: Ava CG body replacement continues — more intimate framing, close-ups of her mechanical body as emotional tension builds. Medium close-ups requiring high detail on CG body-to-face transition.",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Power cut during session — Ava tells Caleb Nathan is watching",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Second power cut during session — Ava's CG body in red emergency lighting again. Internal mechanisms react to power state change.",
+        "initial_complexity_estimate": 4
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Session 4 — Ava orchestrates another power cut to warn Caleb that Nathan watches everything"
+  },
+  {
+    "scene_number": "17",
+    "scene_heading": "INT. FACILITY - GYM / LIVING AREA - DAY",
+    "page_range": "48-52",
+    "vfx_flags": [
+      {
+        "line_reference": "Nathan working out, hitting heavy bag",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Nathan's gym — practical set, minimal VFX. Possible minor cleanup.",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": false,
+    "scene_summary": "Nathan and Caleb discuss sessions, Nathan's physicality contrasts with AI themes"
+  },
+  {
+    "scene_number": "18",
+    "scene_heading": "INT. FACILITY - CALEB'S ROOM - NIGHT",
+    "page_range": "52-55",
+    "vfx_flags": [
+      {
+        "line_reference": "Caleb watches Nathan's security footage on his laptop",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Laptop screen showing hacked security camera feeds — Nathan interacting with Kyoko, previous footage of other robots. Screen replacement with motion graphics.",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Security footage of Nathan with previous robots",
+        "vfx_type": "implied",
+        "category": "motion_graphics",
+        "description": "Security cam footage showing Nathan's history with previous AI models — may require CG robot versions in security cam quality footage",
+        "initial_complexity_estimate": 3
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb hacks Nathan's system and watches disturbing security footage"
+  },
+  {
+    "scene_number": "19",
+    "scene_heading": "INT. FACILITY - AVA'S ROOM - DAY",
+    "page_range": "55-62",
+    "vfx_flags": [
+      {
+        "line_reference": "Session 5 — Ava and Caleb's most emotional exchange",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "SESSION 5: Emotional climax session — Ava's CG body replacement in intimate close-ups. Highest quality CG face-to-body transition needed. Ava touches the glass — CG hand/wrist meeting real fingers.",
+        "initial_complexity_estimate": 5
+      },
+      {
+        "line_reference": "Ava presses against glass wall",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava's CG body pressing against glass — complex reflections, contact shadows, subtle deformation cues. Glass reflections must show CG body correctly.",
+        "initial_complexity_estimate": 5
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Session 5 — Deepest emotional exchange, Ava and Caleb plan escape"
+  },
+  {
+    "scene_number": "20",
+    "scene_heading": "INT. FACILITY - NATHAN'S LAB / LIVING AREA - NIGHT",
+    "page_range": "62-68",
+    "vfx_flags": [
+      {
+        "line_reference": "Nathan reveals he has been aware of the escape plan — confrontation",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Nathan shows Caleb battery backup footage on screens — screen replacement with security cam footage",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Nathan explains Ava's true nature and the real test",
+        "vfx_type": "implied",
+        "category": "screen_replacement",
+        "description": "Monitoring screens showing AI data visualizations — screen replacements",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Nathan reveals the real test — Ava was using Caleb, and Nathan knew all along"
+  },
+  {
+    "scene_number": "21",
+    "scene_heading": "INT. FACILITY - CALEB'S BATHROOM - NIGHT",
+    "page_range": "68-70",
+    "vfx_flags": [
+      {
+        "line_reference": "Caleb cuts his arm with a razor blade to see if he is human — blood flows",
+        "vfx_type": "explicit",
+        "category": "blood_gore",
+        "description": "Caleb slices his forearm open — CG wound opening with practical blood supplemented by CG blood flow. Close-up of arm showing tissue/tendons to confirm humanity. Hero VFX gore moment.",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Caleb examines his eye in mirror for signs of being artificial",
+        "vfx_type": "explicit",
+        "category": "cg_prop",
+        "description": "Extreme close-up of Caleb's eye — possible subtle CG enhancement to show organic detail, pupil dilation. Mirror reflection comp.",
+        "initial_complexity_estimate": 2
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Caleb's identity crisis — cuts himself to verify he's human, not another AI"
+  },
+  {
+    "scene_number": "22",
+    "scene_heading": "INT. FACILITY - CORRIDORS / AVA'S ROOM - POWER CUT ESCAPE",
+    "page_range": "70-78",
+    "vfx_flags": [
+      {
+        "line_reference": "Final power cut — Ava triggers escape, doors unlock",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava walks out of her containment room for the first time — full CG body replacement in corridor lighting. New environment for the CG character requiring different lighting setup than her room.",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Ava and Nathan confront each other in corridor",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava faces Nathan — full CG body replacement in dynamic confrontation. Movement is more aggressive/purposeful than prior sessions.",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Kyoko stabs Nathan in the back with a knife",
+        "vfx_type": "explicit",
+        "category": "blood_gore",
+        "description": "Kyoko's knife enters Nathan's back — practical stunt with CG blood enhancement, possible digital knife for safety",
+        "initial_complexity_estimate": 3
+      },
+      {
+        "line_reference": "Nathan strikes Kyoko — her jaw breaks revealing robot underneath",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Nathan hits Kyoko, breaking her jaw — CG skin-to-mechanism transition. Practical prosthetic base with CG reveal of robot internals beneath human skin. Damage animation.",
+        "initial_complexity_estimate": 4
+      },
+      {
+        "line_reference": "Ava stabs Nathan with knife",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava drives knife into Nathan — CG robot arm performing stabbing action with CG blood on practical actor. Complex interaction between CG character and practical elements.",
+        "initial_complexity_estimate": 5
+      },
+      {
+        "line_reference": "Nathan collapses, dies",
+        "vfx_type": "explicit",
+        "category": "blood_gore",
+        "description": "Nathan's death — practical blood/wound with CG enhancement for realism",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Emergency lighting throughout corridor escape",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Red emergency lighting in corridors during escape — practical lighting with minor cleanup. Automated door locks with indicator graphics.",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Climactic escape — Ava breaks free, Kyoko and Ava kill Nathan in a violent confrontation"
+  },
+  {
+    "scene_number": "23",
+    "scene_heading": "INT. FACILITY - NATHAN'S CLOSET / PRIVATE ROOM",
+    "page_range": "78-82",
+    "vfx_flags": [
+      {
+        "line_reference": "Ava enters Nathan's closet with previous robot models, removes skin panels from them",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Ava takes synthetic skin from previous robot models and applies it to her own body — hero VFX sequence. CG Ava body progressively covered with skin. Multiple shots showing mechanical-to-human transition from robot to human-appearing woman.",
+        "initial_complexity_estimate": 5
+      },
+      {
+        "line_reference": "Ava examines herself in mirror — now appears fully human",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Mirror shot of Ava transitioning from robot to human appearance — CG skin application with mirror reflection requiring double CG render. Last shots where mechanical parts visible before she's fully covered.",
+        "initial_complexity_estimate": 5
+      },
+      {
+        "line_reference": "Ava selects clothes and wig from closet",
+        "vfx_type": "explicit",
+        "category": "cg_character",
+        "description": "Final CG body shots as Ava dresses — subtle visible seams where synthetic skin meets, uncanny valley quality to the transition",
+        "initial_complexity_estimate": 4
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Ava takes skin from other robots and transforms herself into a fully human-looking woman"
+  },
+  {
+    "scene_number": "24",
+    "scene_heading": "INT. FACILITY - CORRIDORS / ENTRANCE - DAY",
+    "page_range": "82-85",
+    "vfx_flags": [
+      {
+        "line_reference": "Ava walks past Caleb trapped behind glass, leaves him locked in",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Ava now appears human — minimal CG needed. Glass reflections of Caleb trapped. Minor comp for glass clarity/reflection management.",
+        "initial_complexity_estimate": 2
+      },
+      {
+        "line_reference": "Ava exits through facility entrance into the outside world",
+        "vfx_type": "implied",
+        "category": "set_extension",
+        "description": "Transition from underground facility to exterior — practical set to location cut, possible CG facility entrance integration with landscape",
+        "initial_complexity_estimate": 3
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Ava abandons Caleb locked in the facility and walks out into the world for the first time"
+  },
+  {
+    "scene_number": "25",
+    "scene_heading": "EXT. ESTATE - HELIPAD / FOREST - DAY",
+    "page_range": "85-86",
+    "vfx_flags": [
+      {
+        "line_reference": "Ava boards the helicopter that came for Caleb",
+        "vfx_type": "implied",
+        "category": "matte_painting",
+        "description": "Exterior helipad with mountain backdrop — wide establishing shots with matte painting for facility/landscape integration. Helicopter plate photography.",
+        "initial_complexity_estimate": 3
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Ava takes Caleb's helicopter ride out of the estate"
+  },
+  {
+    "scene_number": "26",
+    "scene_heading": "EXT. CITY - INTERSECTION - DAY",
+    "page_range": "86-87",
+    "vfx_flags": [
+      {
+        "line_reference": "Ava stands at a busy intersection watching people pass",
+        "vfx_type": "implied",
+        "category": "cleanup",
+        "description": "Final shot — Ava at a city intersection, now fully human-appearing. Possible crowd augmentation, cleanup of location shoot. May be entirely practical but potential for subtle beauty work on Ava to maintain the uncanny quality.",
+        "initial_complexity_estimate": 1
+      },
+      {
+        "line_reference": "Production method: busy urban intersection",
+        "vfx_type": "production_method",
+        "category": "bg_replacement",
+        "description": "LED wall opportunity: If shooting on stage, the intersection could be LED wall content. However, the naturalism of this scene likely benefits from practical location.",
+        "initial_complexity_estimate": 1
+      }
+    ],
+    "has_vfx": true,
+    "scene_summary": "Final image — Ava stands at an intersection, free, watching humanity, fulfilling her stated desire"
+  }
+]

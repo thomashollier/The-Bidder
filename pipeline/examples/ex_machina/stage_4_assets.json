@@ -1,0 +1,282 @@
+{
+  "project_name": "Ex Machina",
+  "total_assets": 20,
+  "assets": [
+    {
+      "asset_number": 1,
+      "asset_name": "Ava - CG Robot Body",
+      "asset_type": "Character",
+      "description": "Hero CG robot body that replaces the actress's torso, limbs, and neck in every shot where mechanical parts are visible. Transparent panels reveal internal mechanisms. Must seamlessly blend with real face and hands at transition zones.",
+      "requirements": "Photoreal metal/composite material surface; transparent panel sections showing internals; match to actress body proportions exactly; full body articulation matching live performance via matchmove; multiple lighting setups (normal, red emergency, corridor); subtle surface imperfections for realism; correct glass/surface reflections; anatomically plausible mechanical joints",
+      "complexity": 5,
+      "variants": [
+        {"name": "Standard", "description": "Default clean state — all sessions"},
+        {"name": "Red Emergency", "description": "Power cut lighting — internal components glow differently"},
+        {"name": "Clothed", "description": "Reduced body — only neck/collar and wrist transitions visible when dressed"},
+        {"name": "Corridor", "description": "Escape sequence — different lighting environment than Ava's room"}
+      ],
+      "notes": "Primary CG asset of the entire film. Appears in 44 shots. Quality bar is set by this asset — it IS the movie's VFX.",
+      "shot_count": 44,
+      "shots_used_in": [19, 20, 21, 22, 23, 24, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37, 38, 39, 41, 42, 43, 44, 45, 46, 55, 56, 57, 58, 59, 60, 64, 65, 66, 71, 73, 74, 75, 76, 77]
+    },
+    {
+      "asset_number": 2,
+      "asset_name": "Ava - Internal Mechanisms",
+      "asset_type": "Character",
+      "description": "Animated internal components visible through Ava's transparent body panels — servos, fiber optics, fluid channels, spinal structure. Animates subtly during conversation and reacts to power state.",
+      "requirements": "Detailed mechanical internals: servo motors, fiber optic bundles, fluid conduits, spinal column mechanism; procedural animation for idle state (subtle movement suggesting life); reactive animation for speech/emotion; different glow states for normal vs. emergency power; must be visible through transparent outer shell at multiple depths",
+      "complexity": 4,
+      "variants": [
+        {"name": "Normal", "description": "Standard ambient internal animation"},
+        {"name": "Emergency", "description": "Red-lit power cut state — different glow patterns"},
+        {"name": "Emotional", "description": "Heightened internal activity during emotional moments (Session 5)"}
+      ],
+      "notes": "Integral sub-component of asset #1. Adds a layer of life to Ava's body — the mechanisms suggest she is 'alive' even when still.",
+      "shot_count": 16,
+      "shots_used_in": [19, 23, 27, 30, 34, 37, 41, 55, 56, 58, 64, 20, 26, 32, 35, 39]
+    },
+    {
+      "asset_number": 3,
+      "asset_name": "Ava - Clothing Interaction",
+      "asset_type": "FX",
+      "description": "Cloth simulation or hand-animated setup for Session 3 dressing sequence — stockings, dress, and wig interacting with CG mechanical body.",
+      "requirements": "Cloth-over-mechanism interaction; stocking material stretching over CG leg joints; dress fabric draping over CG torso; wig settling onto CG head; must feel physically plausible — fabric catching on mechanical edges",
+      "complexity": 4,
+      "variants": [],
+      "notes": "Used only in Session 3 dressing sequence but is a hero VFX moment. May require Houdini cloth sim or careful hand animation.",
+      "shot_count": 2,
+      "shots_used_in": [42, 43]
+    },
+    {
+      "asset_number": 4,
+      "asset_name": "Ava - Synthetic Skin Application",
+      "asset_type": "FX",
+      "description": "CG effect showing synthetic skin being applied to Ava's mechanical body during transformation sequence. Progressive coverage from robot to human-appearing.",
+      "requirements": "Skin material that visually reads as synthetic but human-like; progressive application animation showing coverage spreading; must work in both direct view and mirror reflection; subtle seam lines where skin panels meet; transition from clearly mechanical to uncannily human",
+      "complexity": 5,
+      "variants": [],
+      "notes": "Used in the transformation sequence — visual climax of Ava's arc. Mirror shot requires double render. 3 hero shots.",
+      "shot_count": 3,
+      "shots_used_in": [74, 75, 76]
+    },
+    {
+      "asset_number": 5,
+      "asset_name": "Ava - Digital Double",
+      "asset_type": "Digital_Double",
+      "description": "Full CG Ava for shots where practical performance isn't possible — primarily the security camera footage showing Ava's full body at low resolution.",
+      "requirements": "Lower-fidelity version of Ava CG body suitable for security camera quality footage; basic walk/sit/stand animation cycles; does not need hero-quality face-to-body transition",
+      "complexity": 2,
+      "variants": [],
+      "notes": "Used only in security camera footage on monitors. Lower quality threshold than hero Ava shots.",
+      "shot_count": 2,
+      "shots_used_in": [25, 15]
+    },
+    {
+      "asset_number": 6,
+      "asset_name": "Kyoko - Robot Reveal",
+      "asset_type": "Character",
+      "description": "CG skin-to-mechanism transition for Kyoko's face and torso when Nathan strikes her. Reveals robot internals beneath human skin.",
+      "requirements": "Realistic human skin tearing/peeling back to reveal mechanism underneath; broken jaw mechanism with exposed servos; design must be consistent with Ava's mechanical aesthetic but earlier generation; practical prosthetic base enhanced with CG for transition animation",
+      "complexity": 4,
+      "variants": [
+        {"name": "Initial Break", "description": "First moment of skin damage — jaw displacement"},
+        {"name": "Sustained Reveal", "description": "Continued visible damage in subsequent shots"}
+      ],
+      "notes": "3-4 shots. Mix of practical prosthetic and CG. Shocking reveal moment — quality must be high.",
+      "shot_count": 2,
+      "shots_used_in": [69, 70]
+    },
+    {
+      "asset_number": 7,
+      "asset_name": "Previous Robot Models",
+      "asset_type": "Character",
+      "description": "3-5 previous AI robot iterations displayed in Nathan's closet. Various states of completion showing design evolution toward Ava.",
+      "requirements": "Practical mannequin/prosthetic base with CG enhancement; translucent skin effect on most complete models; exposed wiring and internal structure on less complete models; internal glow consistent with Ava's design; each model should look distinctly different — evolution of design",
+      "complexity": 2,
+      "variants": [
+        {"name": "Complete", "description": "Most finished model — closest to Ava, translucent skin"},
+        {"name": "Partial", "description": "Mid-completion — exposed mechanical structure"},
+        {"name": "Early", "description": "Crude early prototype — minimal skin, exposed frame"}
+      ],
+      "notes": "Practical builds with CG enhancement. Not full CG — augmentation of props department builds. Also appears in security footage (lower quality).",
+      "shot_count": 5,
+      "shots_used_in": [50, 51, 52, 53, 74]
+    },
+    {
+      "asset_number": 8,
+      "asset_name": "Facility Entrance - CG Integration",
+      "asset_type": "Environment",
+      "description": "CG/matte painting element to blend the practical facility entrance set piece into the Norwegian landscape location. Hidden entrance integrated into natural rock/terrain.",
+      "requirements": "Photoreal rock/terrain CG matching Norwegian location photography; door/entrance mechanism integrated into hillside; lighting matching plate photography at multiple times of day; seamless blend between practical set and CG extension",
+      "complexity": 3,
+      "variants": [],
+      "notes": "Used in arrival sequence and Ava's exit. Practical set built for close shots, CG for wider views showing integration with landscape.",
+      "shot_count": 2,
+      "shots_used_in": [5, 78]
+    },
+    {
+      "asset_number": 9,
+      "asset_name": "Mountain Landscape",
+      "asset_type": "Environment",
+      "description": "Norwegian mountain/forest landscape matte painting for aerial shots, establishing shots, and background extensions. Vast wilderness establishing the isolation of Nathan's estate.",
+      "requirements": "High-resolution matte painting based on Norwegian location photography; atmospheric haze and aerial perspective; multiple weather/time conditions; parallax-capable for camera moves on aerials; must establish vast scale and remoteness",
+      "complexity": 3,
+      "variants": [
+        {"name": "Aerial", "description": "Full 360° environment for helicopter approach"},
+        {"name": "Ground Level", "description": "Background extensions for ground-level exterior shots"}
+      ],
+      "notes": "Based on location photography. Enhancement and extension rather than full build.",
+      "shot_count": 7,
+      "shots_used_in": [2, 3, 5, 47, 48, 49, 79]
+    },
+    {
+      "asset_number": 10,
+      "asset_name": "Estate Exterior - Matte Painting",
+      "asset_type": "Environment",
+      "description": "Matte painting showing Nathan's estate from exterior — the above-ground portion of the facility blending into the mountain landscape.",
+      "requirements": "Architectural integration with natural landscape; glass/concrete modern architecture partially hidden by terrain; must feel like a real building photographed at a real location; multiple angles needed",
+      "complexity": 3,
+      "variants": [],
+      "notes": "Key establishing element — makes the audience believe the facility exists in this landscape.",
+      "shot_count": 5,
+      "shots_used_in": [2, 5, 47, 78, 79]
+    },
+    {
+      "asset_number": 11,
+      "asset_name": "Glass Wall Reflections",
+      "asset_type": "Comp",
+      "description": "Compositing template for managing glass wall reflections in Ava's observation room. CG Ava body must reflect correctly; Caleb's reflections must be managed; room lighting changes must track.",
+      "requirements": "Reflection pass rendering setup for CG character on glass surface; reflection intensity and falloff matching practical glass; handling of both sides of glass (Ava's room and observation corridor); compatible with multiple lighting states (normal, emergency)",
+      "complexity": 2,
+      "variants": [],
+      "notes": "Comp template asset — developed once and applied to all session shots with glass. Not a CG build but a workflow asset.",
+      "shot_count": 6,
+      "shots_used_in": [19, 22, 29, 57, 59, 77]
+    },
+    {
+      "asset_number": 12,
+      "asset_name": "LED Wall Content - Forest Views",
+      "asset_type": "Environment",
+      "description": "If using LED wall / virtual production: pre-rendered forest and mountain views for Ava's room windows and facility corridor views. Provides interactive lighting and clean in-camera backgrounds.",
+      "requirements": "High-resolution forest/mountain content for LED playback; multiple times of day; camera-tracked parallax; color-calibrated for LED volume; must match Norwegian location photography aesthetic",
+      "complexity": 2,
+      "variants": [
+        {"name": "Morning", "description": "Warm morning light through trees"},
+        {"name": "Afternoon", "description": "Flat overcast or bright sun"},
+        {"name": "Evening", "description": "Warm low light"}
+      ],
+      "notes": "OPTIONAL — only if production uses LED wall for Ava's room. Per assumption #8, this could eliminate 10-15 window comp shots. Asset is purchased/sourced stock content, not original build.",
+      "shot_count": 0,
+      "shots_used_in": []
+    },
+    {
+      "asset_number": 13,
+      "asset_name": "Caleb - Digital Double",
+      "asset_type": "Digital_Double",
+      "description": "Not required per current breakdown. Caleb is always played by the actor with no CG replacement needed.",
+      "requirements": "N/A",
+      "complexity": 0,
+      "variants": [],
+      "notes": "ASSET NOT REQUIRED — included for completeness. Caleb has no digital double shots.",
+      "shot_count": 0,
+      "shots_used_in": []
+    },
+    {
+      "asset_number": 14,
+      "asset_name": "CG Wound - Arm Cut",
+      "asset_type": "FX",
+      "description": "CG wound effect for Caleb slicing his forearm — opening in skin revealing tissue, muscle, and tendon to confirm he is human.",
+      "requirements": "Photoreal wound opening animation; visible tissue layers (skin, fat, muscle, tendon); blood emerging from cut; must augment practical prosthetic seamlessly; close-up quality required",
+      "complexity": 3,
+      "variants": [],
+      "notes": "2-3 shots. Practical prosthetic base with CG augmentation for the active cutting and blood flow. Single use but hero quality.",
+      "shot_count": 2,
+      "shots_used_in": [61, 62]
+    },
+    {
+      "asset_number": 15,
+      "asset_name": "Blood FX",
+      "asset_type": "FX",
+      "description": "CG blood effects for multiple scenes — Caleb's self-test, Kyoko stabbing Nathan, Ava stabbing Nathan, Nathan's death.",
+      "requirements": "Realistic blood fluid simulation; splatter on surfaces; pooling on floor; blood on knife blade; flowing from wound; multiple viscosities (arterial vs. venous); color-accurate for the lighting conditions of each scene",
+      "complexity": 2,
+      "variants": [
+        {"name": "Wound Flow", "description": "Steady blood flow from cuts (Caleb arm)"},
+        {"name": "Stab Splash", "description": "Impact splash from knife wounds (Nathan)"},
+        {"name": "Pool", "description": "Blood pooling on floor (Nathan death)"}
+      ],
+      "notes": "Used across 4 shots in different scenes. Practical blood for most coverage, CG for hero close-ups and enhancement.",
+      "shot_count": 4,
+      "shots_used_in": [62, 68, 71, 72]
+    },
+    {
+      "asset_number": 16,
+      "asset_name": "Wire/Rig Removal",
+      "asset_type": "Comp",
+      "description": "General cleanup comp asset for wire removal, safety rig removal, and set cleanup across various shots.",
+      "requirements": "Standard paint/roto cleanup capabilities; texture recreation for wire-removed areas; shadow handling",
+      "complexity": 0,
+      "variants": [],
+      "notes": "Folded into individual shot costs — not a standalone build. Included for tracking purposes.",
+      "shot_count": 4,
+      "shots_used_in": [4, 63, 67, 80]
+    },
+    {
+      "asset_number": 17,
+      "asset_name": "Door Lock Indicators",
+      "asset_type": "Motion_Graphics",
+      "description": "Small LED/screen indicators on facility doors showing lock status — green for accessible, red for restricted, flashing during power cuts.",
+      "requirements": "Simple animated indicator graphics; green/red/amber states; power-cut flashing state; consistent design language with facility aesthetic",
+      "complexity": 1,
+      "variants": [],
+      "notes": "Small recurring element throughout film. Template-based — design once, apply to each door shot.",
+      "shot_count": 2,
+      "shots_used_in": [12, 13]
+    },
+    {
+      "asset_number": 18,
+      "asset_name": "Screen Content - Bluebook UI",
+      "asset_type": "Motion_Graphics",
+      "description": "Bluebook company interface design — the Google-like search engine and internal company tools. Used on monitors, laptops, and console screens throughout the facility.",
+      "requirements": "Clean, modern tech UI design; search results pages; AI data visualizations; competition winner notification; facial recognition console UI; consistent brand design language; multiple screen sizes (laptop, desktop monitor, wall display, small console)",
+      "complexity": 2,
+      "variants": [
+        {"name": "Search Interface", "description": "Bluebook search results pages"},
+        {"name": "Data Visualization", "description": "AI architecture and data flow diagrams"},
+        {"name": "Console UI", "description": "Facility entrance facial recognition"},
+        {"name": "Competition", "description": "Winner notification on Caleb's monitor"}
+      ],
+      "notes": "Recurring throughout film. ~10 unique designs needed across 10+ shots. Motion graphics design package.",
+      "shot_count": 10,
+      "shots_used_in": [1, 6, 7, 8, 9, 10, 11, 12, 13, 18]
+    },
+    {
+      "asset_number": 19,
+      "asset_name": "Screen Content - Security Feeds",
+      "asset_type": "Motion_Graphics",
+      "description": "Security camera feeds shown on Nathan's monitoring system and Caleb's hacked laptop. CCTV-quality footage of facility areas, Ava's room, and archived footage of previous robots.",
+      "requirements": "Security camera aesthetic (slight fisheye, timestamp overlay, lower resolution); multiple camera angles of Ava's room; archived footage of Nathan with previous robots (may require CG robot renders at security cam quality); static/loss-of-feed for power cut sequences",
+      "complexity": 2,
+      "variants": [
+        {"name": "Live Feed", "description": "Current CCTV of Ava's room"},
+        {"name": "Archive", "description": "Historical footage of previous robots"},
+        {"name": "Static", "description": "Loss of feed during power cuts"}
+      ],
+      "notes": "Some security footage requires CG robots at lower resolution. Archive footage may need separate mini-shoot or be fully CG.",
+      "shot_count": 6,
+      "shots_used_in": [14, 15, 16, 17, 25, 40]
+    },
+    {
+      "asset_number": 20,
+      "asset_name": "Screen Content - Monitoring",
+      "asset_type": "Motion_Graphics",
+      "description": "Nathan's monitoring station interface — system status, battery backup indicators, AI behavioral data, and session recording playback.",
+      "requirements": "Technical monitoring interface design; real-time data display; session playback capability; battery/power status indicators; consistent with facility's tech aesthetic",
+      "complexity": 1,
+      "variants": [],
+      "notes": "Used primarily in Nathan's reveal scene. Simpler design than Bluebook UI — more utilitarian/diagnostic.",
+      "shot_count": 1,
+      "shots_used_in": [17]
+    }
+  ]
+}

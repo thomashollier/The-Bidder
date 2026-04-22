@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx-breakdown/script-input",
+  "title": "Script Input",
+  "description": "Metadata and text of the screenplay being analyzed. This is the entry point for the entire pipeline.",
+  "type": "object",
+  "required": ["project_name", "script_source"],
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "description": "Working title of the project"
+    },
+    "writer": {
+      "type": "string"
+    },
+    "draft": {
+      "type": "string",
+      "description": "Draft identifier (e.g., 'Clean Shooting Script', 'Rev. Blue', 'First Draft')"
+    },
+    "date": {
+      "type": "string",
+      "description": "Script date"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "page_count": {
+      "type": "integer"
+    },
+    "script_source": {
+      "type": "string",
+      "enum": ["full_text", "pdf_path", "url"],
+      "description": "How the script content is provided"
+    },
+    "script_text": {
+      "type": "string",
+      "description": "Full screenplay text (if script_source is 'full_text')"
+    },
+    "script_path": {
+      "type": "string",
+      "description": "Path to screenplay file (if script_source is 'pdf_path')"
+    },
+    "script_url": {
+      "type": "string",
+      "description": "URL to screenplay (if script_source is 'url')"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Any context about this draft (e.g., 'Includes blue revision pages for scenes 45-60')"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx-breakdown/assets",
+  "title": "VFX Asset Inventory",
+  "description": "Consolidated inventory of all CG assets, environments, FX setups, and comp templates required for the project. Each asset is cross-referenced to every shot that uses it.",
+  "type": "object",
+  "required": ["project_name", "assets"],
+  "properties": {
+    "project_name": { "type": "string" },
+    "total_assets": { "type": "integer" },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_number",
+          "asset_name",
+          "asset_type",
+          "description",
+          "requirements",
+          "complexity",
+          "shot_count",
+          "shots_used_in"
+        ],
+        "properties": {
+          "asset_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "asset_name": {
+            "type": "string",
+            "description": "Descriptive name (e.g., 'ED Robot - Full CG')"
+          },
+          "asset_type": {
+            "type": "string",
+            "enum": [
+              "Character",
+              "Creature",
+              "Vehicle",
+              "Environment",
+              "Prop",
+              "FX",
+              "Comp",
+              "Motion_Graphics",
+              "Digital_Double"
+            ],
+            "description": "Primary asset category"
+          },
+          "description": {
+            "type": "string",
+            "description": "What this asset is and its role in the story"
+          },
+          "requirements": {
+            "type": "string",
+            "description": "Technical build requirements (e.g., 'Photo-realistic metal textures; full body rig; facial animation; multiple damage states')"
+          },
+          "complexity": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5,
+            "description": "0=N/A or practical, 1=simple (screen content/paint fix), 2=moderate (matte painting/simple CG), 3=standard (rigged CG asset), 4=complex (hero CG with multiple states), 5=hero (photoreal character/creature with full performance)"
+          },
+          "variants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            },
+            "description": "Different states or versions needed (e.g., clean, damaged, wet, night)"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "shot_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Total number of shots this asset appears in"
+          },
+          "shots_used_in": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "description": "Shot numbers where this asset is used"
+          }
+        }
+      }
+    }
+  }
+}

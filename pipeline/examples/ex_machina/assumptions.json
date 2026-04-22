@@ -1,0 +1,87 @@
+{
+  "project_name": "Ex Machina",
+  "script_version": "Clean Shooting Script",
+  "date": "2026-04-22",
+  "assumptions": [
+    {
+      "id": 1,
+      "category": "character",
+      "description": "Ava's robot body is a CG replacement on the actress in every shot where mechanical parts are visible. The actress performs on set wearing tracking markers on exposed mechanical areas (torso, limbs, neck). Face and hands are always the real actress.",
+      "scope_impact": "Every Ava shot with visible robot body requires CG body replacement — estimated 40-50 shots. Face compositing needed to blend real face onto CG head/neck.",
+      "affects_assets": ["Ava - CG Robot Body"],
+      "source": "VFX Supervisor"
+    },
+    {
+      "id": 2,
+      "category": "character",
+      "description": "Ava's internal mechanisms (visible through transparent torso/limbs) are fully CG with animated servos, fiber optics, and fluid channels.",
+      "scope_impact": "Adds internal mechanism animation pass to every CG body replacement shot. Requires photoreal close-ups in several session scenes.",
+      "affects_assets": ["Ava - CG Robot Body", "Ava - Internal Mechanisms"],
+      "source": "Director"
+    },
+    {
+      "id": 3,
+      "category": "character",
+      "description": "Kyoko is revealed as a robot in a single scene — peeling back skin on her face and torso. This is a mix of practical prosthetics and CG enhancement.",
+      "scope_impact": "3-5 CG shots for Kyoko reveal. Practical prosthetics for close-ups with CG transition between skin and mechanism.",
+      "affects_assets": ["Kyoko - Robot Reveal"],
+      "source": "VFX Supervisor"
+    },
+    {
+      "id": 4,
+      "category": "character",
+      "description": "Previous robot models shown in Nathan's closet are practical builds with minimal CG cleanup.",
+      "scope_impact": "2-4 cleanup shots. Practical prosthetics/mannequins on set with paint fixes only.",
+      "affects_assets": ["Previous Robot Models"],
+      "source": "Production"
+    },
+    {
+      "id": 5,
+      "category": "environment",
+      "description": "The research facility interior is a practical set build. No CG set extension needed for interior corridors, Ava's room, or Nathan's living spaces.",
+      "scope_impact": "Eliminates interior set extension work. Facility interiors are practical with only monitor/screen replacements needed.",
+      "affects_assets": [],
+      "source": "Production Designer"
+    },
+    {
+      "id": 6,
+      "category": "environment",
+      "description": "Ava's glass-walled room is a practical set with real glass. The room beyond the glass requires no CG — it's built on set.",
+      "scope_impact": "No green screen comp for Ava's room. Reflection management is practical/on-set.",
+      "affects_assets": [],
+      "source": "Production Designer"
+    },
+    {
+      "id": 7,
+      "category": "environment",
+      "description": "Exterior mountain/estate shots are a combination of location photography (Norway) and matte painting extensions for the facility entrance and helicopter approach.",
+      "scope_impact": "5-8 matte painting/set extension shots for exteriors. Helicopter approach is plate photography with facility CG/matte painting.",
+      "affects_assets": ["Estate Exterior - Matte Painting", "Mountain Landscape"],
+      "source": "VFX Supervisor"
+    },
+    {
+      "id": 8,
+      "category": "virtual_production",
+      "description": "If reimagined with modern VP: Ava's room windows and the facility corridor views of the forest could be LED wall content, providing interactive lighting and clean in-camera backgrounds.",
+      "scope_impact": "Could eliminate 10-15 window/view comp shots. LED wall provides natural light interaction for glass reflections in Ava's room.",
+      "affects_assets": ["Forest/Mountain LED Content"],
+      "source": "VFX Supervisor (modern reimagining)"
+    },
+    {
+      "id": 9,
+      "category": "production_method",
+      "description": "All monitor and display content (Nathan's computer screens, security camera feeds, Bluebook search interface, Ava's room monitoring screens) are screen replacements in post.",
+      "scope_impact": "15-25 screen replacement shots across the film. Motion graphics design needed for Bluebook UI, security feeds, and monitoring interfaces.",
+      "affects_assets": ["Screen Content - Bluebook UI", "Screen Content - Security Feeds", "Screen Content - Monitoring"],
+      "source": "Production"
+    },
+    {
+      "id": 10,
+      "category": "post_production",
+      "description": "Power cut sequences use practical lighting changes on set. Red emergency lighting is practical. CG enhancement limited to Ava's glowing components and any door lock VFX.",
+      "scope_impact": "Minimal CG during power cuts — mostly practical lighting. 2-3 shots of Ava's components glowing/reacting.",
+      "affects_assets": ["Ava - CG Robot Body"],
+      "source": "Director"
+    }
+  ]
+}

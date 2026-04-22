@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vfx-breakdown/assumptions",
+  "title": "VFX Production Assumptions",
+  "description": "Production decisions and constraints that shape the VFX breakdown scope. These must be established before any breakdown work begins, as they drive major scope and cost decisions.",
+  "type": "object",
+  "required": ["project_name", "assumptions"],
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "description": "Working title of the project"
+    },
+    "script_version": {
+      "type": "string",
+      "description": "Draft identifier (e.g., 'Shooting Script', 'Rev. Blue', 'Draft 3')"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date assumptions were established"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "description", "scope_impact"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Sequential assumption number"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "character",
+              "vehicle",
+              "environment",
+              "production_method",
+              "post_production",
+              "virtual_production",
+              "practical_effects"
+            ],
+            "description": "Domain this assumption affects"
+          },
+          "description": {
+            "type": "string",
+            "description": "Clear statement of the production decision"
+          },
+          "scope_impact": {
+            "type": "string",
+            "description": "How this assumption changes the VFX scope (e.g., 'Eliminates 30 CG enhancement shots, adds 65 full CG replacement shots')"
+          },
+          "affects_assets": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Asset names this assumption impacts"
+          },
+          "source": {
+            "type": "string",
+            "description": "Who made this decision (e.g., 'Director', 'VFX Supervisor', 'Production')"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "project_name": "Ex Machina",
+  "total_sequences": 12,
+  "total_estimated_vfx_shots": 78,
+  "sequences": [
+    {
+      "sequence_number": 1,
+      "sequence_name": "Arrival - Helicopter & Estate Approach",
+      "scenes": "1-3",
+      "page_range": "1-3",
+      "estimated_shot_count": 6,
+      "vfx_requirements": "Aerial helicopter plates over Norwegian mountains; matte painting extensions for estate boundary and facility entrance; facility entrance CG/set extension blending into landscape; Bluebook office screen replacement; facial recognition console UI",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Helicopter interiors are brief — practical location shoot more efficient",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Aerial photography shot on location in Norway. Facility entrance is a practical set piece composited into location photography. Matte painting for 2-3 wide establishing shots."
+    },
+    {
+      "sequence_number": 2,
+      "sequence_name": "Facility Interiors - Screens & Monitors",
+      "scenes": "4, 6, 8, 9, 12, 17",
+      "page_range": "3-52",
+      "estimated_shot_count": 12,
+      "vfx_requirements": "Screen replacements throughout facility: Nathan's lab monitors, living area displays, Caleb's laptop, door lock indicators, ambient screen content. Motion graphics design for Bluebook UI, AI data visualizations, security system interface.",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Practical set with screen replacement in post is standard approach",
+        "in_camera_benefit": "N/A — screens are replaced regardless"
+      },
+      "assumptions": "All monitor/display content is post-produced. Screens shot with tracking markers or green. Requires motion graphics design package for Bluebook UI system, security feeds, and AI data displays. Estimated 8-10 unique screen designs needed."
+    },
+    {
+      "sequence_number": 3,
+      "sequence_name": "Session 1 - First Encounter with Ava",
+      "scenes": "7",
+      "page_range": "9-14",
+      "estimated_shot_count": 8,
+      "vfx_requirements": "Hero introduction of CG Ava robot body. Full CG body replacement on actress for every shot showing mechanical parts. Glass wall reflections. CCTV monitoring view of Ava. Multiple shot sizes from wide establishing to medium close-up.",
+      "previz": {
+        "needed": true,
+        "description": "Camera blocking for Ava reveal — establishing shot sizes and angles that will showcase the CG body while managing glass reflections",
+        "complexity": 2
+      },
+      "led_stage": {
+        "recommended": true,
+        "description": "Ava's room has windows/views to exterior forest — LED wall could provide interactive natural light and eliminate window comp",
+        "in_camera_benefit": "Window views and natural light interaction on glass walls clean in-camera. Reduces 3-4 window comp shots."
+      },
+      "assumptions": "Per production assumption #1: Actress performs with tracking markers on exposed mechanical areas. Face and hands always real. CG body replacement required for all shots showing torso, limbs, neck."
+    },
+    {
+      "sequence_number": 4,
+      "sequence_name": "Session 2 - Ava's Drawings",
+      "scenes": "10",
+      "page_range": "17-23",
+      "estimated_shot_count": 6,
+      "vfx_requirements": "CG Ava body replacement — more dynamic movement than Session 1. Ava holds drawings (real hands, CG arm/wrist transition). Glass wall reflections. Same technical approach as Session 1 but with more complex hand/prop interaction.",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": true,
+        "description": "Same Ava room setup as Session 1 — LED wall for exterior views through windows",
+        "in_camera_benefit": "Same benefit as Session 1"
+      },
+      "assumptions": "Same CG approach as Session 1. Drawing props are practical — transition from real fingers to CG wrist is the key technical challenge."
+    },
+    {
+      "sequence_number": 5,
+      "sequence_name": "Power Cut Sequences",
+      "scenes": "11, 16",
+      "page_range": "23-48",
+      "estimated_shot_count": 8,
+      "vfx_requirements": "CG Ava body in red emergency lighting — different lighting setup than normal sessions. Internal mechanisms visible/glowing differently in low light. Security camera feeds going to static. Door lock indicators. Two separate power cut events with similar VFX approach.",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Power cut scenes are entirely interior with practical emergency lighting",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Per assumption #10: Practical emergency lighting on set. CG enhancement limited to Ava's glowing components and security screen static. Red lighting requires separate CG lighting pass for Ava's body."
+    },
+    {
+      "sequence_number": 6,
+      "sequence_name": "Session 3 - Ava Dresses Up",
+      "scenes": "13",
+      "page_range": "28-35",
+      "estimated_shot_count": 6,
+      "vfx_requirements": "Hero sequence: Ava puts on stockings, dress, and wig over robot body. CG body visible during dressing — clothing interacting with mechanical limbs. Transition shots from robot to clothed appearance. Subtle CG neck/collar area where mechanical meets clothing.",
+      "previz": {
+        "needed": true,
+        "description": "Blocking for dressing sequence — camera angles must show the transition from robot to clothed while managing the CG-to-practical transition zones",
+        "complexity": 3
+      },
+      "led_stage": {
+        "recommended": true,
+        "description": "Same Ava room LED setup",
+        "in_camera_benefit": "Same as other sessions"
+      },
+      "assumptions": "The dressing sequence is a hero VFX moment — complexity 5 for shots showing the clothing-over-mechanism transition. Once dressed, only neck/collar CG needed."
+    },
+    {
+      "sequence_number": 7,
+      "sequence_name": "Exterior Estate - Forest & Waterfall",
+      "scenes": "14",
+      "page_range": "35-38",
+      "estimated_shot_count": 3,
+      "vfx_requirements": "Wide establishing shots of estate grounds with matte painting extensions. Forest and waterfall are practical location (Norway). Possible drone/aerial shots with matte painting to establish isolation.",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Exterior location shoot",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Per assumption #7: Location photography in Norway with matte painting extensions for establishing shots. Waterfall is practical."
+    },
+    {
+      "sequence_number": 8,
+      "sequence_name": "Nathan's Closet - Previous Robots",
+      "scenes": "15",
+      "page_range": "38-42",
+      "estimated_shot_count": 5,
+      "vfx_requirements": "Previous robot iterations in closets — practical mannequins/prosthetics with CG enhancement for mechanical detail and internal glow. Close-ups requiring CG skin translucency effects. Security footage on Nathan's computer showing archived robot interactions.",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Contained interior set",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Per assumption #4: Practical builds with minimal CG cleanup. 3-5 distinct previous models visible. Most are static displays with CG enhancement for mechanical detail."
+    },
+    {
+      "sequence_number": 9,
+      "sequence_name": "Session 5 - Emotional Climax & Security Footage",
+      "scenes": "18, 19, 20",
+      "page_range": "52-68",
+      "estimated_shot_count": 10,
+      "vfx_requirements": "Highest quality CG Ava body replacement — intimate close-ups requiring hero face-to-body transition. Ava touching glass with CG hand/wrist. Glass reflections at their most complex. Security footage on Caleb's laptop showing Nathan with previous robots. Screen replacements for hacked security system. Nathan's confrontation screens.",
+      "previz": {
+        "needed": true,
+        "description": "Camera blocking for Ava's most intimate close-ups — the face-to-body CG transition must be invisible at these shot sizes",
+        "complexity": 3
+      },
+      "led_stage": {
+        "recommended": true,
+        "description": "Same Ava room LED setup for session scenes",
+        "in_camera_benefit": "Same as other sessions"
+      },
+      "assumptions": "Session 5 is the emotional peak — CG quality must be at its highest. Security footage on laptop requires CG robots at lower quality (security cam resolution)."
+    },
+    {
+      "sequence_number": 10,
+      "sequence_name": "Caleb's Self-Test - Arm Cut",
+      "scenes": "21",
+      "page_range": "68-70",
+      "estimated_shot_count": 3,
+      "vfx_requirements": "CG wound on Caleb's forearm — razor blade cutting skin showing blood and tissue to confirm humanity. Close-up of eye examining organic detail. Mirror reflection comp.",
+      "previz": {
+        "needed": false,
+        "description": "",
+        "complexity": 0
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Contained bathroom set",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Practical blood with CG wound enhancement. Close-up of arm interior showing tissue — CG augmentation on practical prosthetic cut."
+    },
+    {
+      "sequence_number": 11,
+      "sequence_name": "Escape & Confrontation - Ava Breaks Free",
+      "scenes": "22-24",
+      "page_range": "70-85",
+      "estimated_shot_count": 14,
+      "vfx_requirements": "Hero action sequence: CG Ava walking corridors for first time (new lighting environment). Ava-Nathan confrontation with CG character in dynamic movement. Kyoko stabs Nathan (CG blood, possible digital knife). Nathan strikes Kyoko — CG skin-to-mechanism face reveal. Ava stabs Nathan — CG robot arm with practical blood. Nathan's death. Caleb trapped behind glass. Ava exits facility — set extension for entrance integration with exterior.",
+      "previz": {
+        "needed": true,
+        "description": "Essential — complex multi-character action with CG character performing violent actions. Choreography of stabbing, Kyoko reveal, and Nathan's death must be prevized for on-set coordination between practical stunts and CG replacement.",
+        "complexity": 4
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Interior corridor action — practical set with emergency lighting",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Most complex VFX sequence in the film. Ava's CG body in new corridor environment. Kyoko robot reveal is mix of practical prosthetic and CG transition. All blood is practical with CG enhancement. Per assumption #3: Kyoko reveal is 3-5 CG shots."
+    },
+    {
+      "sequence_number": 12,
+      "sequence_name": "Transformation & Freedom",
+      "scenes": "23, 25, 26",
+      "page_range": "78-87",
+      "estimated_shot_count": 7,
+      "vfx_requirements": "Hero transformation: Ava takes synthetic skin from previous robots and applies to her own body. Progressive CG showing mechanical body being covered with skin. Mirror shots requiring double CG render. Final human appearance. Helicopter/exterior matte painting. City intersection — mostly practical final shot.",
+      "previz": {
+        "needed": true,
+        "description": "Transformation sequence blocking — camera angles for the mechanical-to-human skin application must be carefully planned to showcase the VFX while maintaining emotional storytelling",
+        "complexity": 4
+      },
+      "led_stage": {
+        "recommended": false,
+        "description": "Interior set for transformation, practical location for exteriors",
+        "in_camera_benefit": "N/A"
+      },
+      "assumptions": "Hero VFX sequence — the transformation is the visual climax of Ava's character arc. CG must show progressive skin coverage in a way that is both technically convincing and emotionally resonant. Mirror shot is the most complex individual VFX shot in the film."
+    }
+  ]
+}
