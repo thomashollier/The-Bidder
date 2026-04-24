@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bidder — VFX Breakdown Pipeline</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h1><span>The Bidder</span> &mdash; VFX Breakdown Pipeline</h1>
+    <div class="header-status" id="header-status"></div>
+</header>
+
+<main>
+
+    <!-- ============================================================ -->
+    <!-- SETUP PANEL                                                   -->
+    <!-- ============================================================ -->
+    <div id="setup-panel" class="setup-panel">
+        <h2>New Project</h2>
+
+        <div class="setup-grid">
+            <div class="setup-field">
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" placeholder="e.g., My Film">
+            </div>
+
+            <div class="setup-field">
+                <label>Screenplay</label>
+                <div class="drop-zone" id="drop-zone">
+                    <div class="drop-zone-icon">&#128196;</div>
+                    <div class="drop-zone-text">
+                        Drop screenplay here or <strong>click to browse</strong><br>
+                        <span style="font-size: 12px; color: var(--text-muted);">.txt, .pdf, .fdx, or any text format</span>
+                    </div>
+                    <input type="file" id="file-input" accept=".txt,.pdf,.fdx,.fountain,.md">
+                </div>
+            </div>
+
+            <div class="setup-field full-width">
+                <label for="assumptions">Production Assumptions <span style="font-weight: 400; text-transform: none;">(optional but recommended)</span></label>
+                <textarea id="assumptions" placeholder="List key production decisions that affect VFX scope. One per line:
+
+1. The creature is full CG in all shots — no practical suit
+2. All driving scenes will use LED wall for backgrounds
+3. The hero vehicle is practical except for the crash sequence
+4. All screen/monitor content is replaced in post
+5. Exterior establishing shots are matte painting extensions of location photography"></textarea>
+            </div>
+
+            <div class="setup-field full-width">
+                <label for="rate-card">Custom Rate Card <span style="font-weight: 400; text-transform: none;">(optional — leave blank for US defaults)</span></label>
+                <textarea id="rate-card" style="min-height: 60px;" placeholder='Optional JSON: {"junior_artist_day": 450, "mid_artist_day": 650, "senior_artist_day": 900, "lead_day": 1100, "supervisor_day": 1400}'></textarea>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" id="btn-upload" disabled onclick="uploadScreenplay()">
+                Upload &amp; Create Project
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- PIPELINE PANEL                                                -->
+    <!-- ============================================================ -->
+    <div id="pipeline-panel" style="display: none;">
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <div>
+                <h2 id="project-title" style="font-size: 18px; font-weight: 600;"></h2>
+                <div id="screenplay-info" style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;"></div>
+            </div>
+            <div style="display: flex; gap: 12px;">
+                <button class="btn btn-secondary btn-sm" onclick="goBack()">New Project</button>
+            </div>
+        </div>
+
+        <div class="pipeline-header" style="margin-top: 24px;">
+            <h2>Pipeline</h2>
+            <div style="display: flex; gap: 12px;">
+                <button class="btn btn-primary" id="btn-run-all" onclick="runAllStages()">
+                    Run All Stages
+                </button>
+            </div>
+        </div>
+
+        <div class="stages">
+
+            <!-- Stage 1 -->
+            <div class="stage-card" id="stage-1">
+                <div class="stage-header" onclick="toggleOutput(1)">
+                    <div class="stage-number">1</div>
+                    <div class="stage-info">
+                        <div class="stage-name">Script Ingestion &amp; VFX Flagging</div>
+                        <div class="stage-summary">Pending</div>
+                    </div>
+                    <div class="stage-actions">
+                        <button class="btn btn-secondary btn-sm btn-run-stage" onclick="event.stopPropagation(); runSingleStage(1)">Run</button>
+                    </div>
+                </div>
+                <div class="stage-body">
+                    <div class="output-viewer"></div>
+                    <div style="margin-top: 12px;">
+                        <button class="btn btn-secondary btn-sm" onclick="exportCSV(1)">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="stage-card" id="stage-2">
+                <div class="stage-header" onclick="toggleOutput(2)">
+                    <div class="stage-number">2</div>
+                    <div class="stage-info">
+                        <div class="stage-name">Sequence Breakdown</div>
+                        <div class="stage-summary">Pending</div>
+                    </div>
+                    <div class="stage-actions">
+                        <button class="btn btn-secondary btn-sm btn-run-stage" onclick="event.stopPropagation(); runSingleStage(2)">Run</button>
+                    </div>
+                </div>
+                <div class="stage-body">
+                    <div class="output-viewer"></div>
+                    <div style="margin-top: 12px;">
+                        <button class="btn btn-secondary btn-sm" onclick="exportCSV(2)">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="stage-card" id="stage-3">
+                <div class="stage-header" onclick="toggleOutput(3)">
+                    <div class="stage-number">3</div>
+                    <div class="stage-info">
+                        <div class="stage-name">Shot Breakdown</div>
+                        <div class="stage-summary">Pending</div>
+                    </div>
+                    <div class="stage-actions">
+                        <button class="btn btn-secondary btn-sm btn-run-stage" onclick="event.stopPropagation(); runSingleStage(3)">Run</button>
+                    </div>
+                </div>
+                <div class="stage-body">
+                    <div class="output-viewer"></div>
+                    <div style="margin-top: 12px;">
+                        <button class="btn btn-secondary btn-sm" onclick="exportCSV(3)">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="stage-card" id="stage-4">
+                <div class="stage-header" onclick="toggleOutput(4)">
+                    <div class="stage-number">4</div>
+                    <div class="stage-info">
+                        <div class="stage-name">Asset Extraction</div>
+                        <div class="stage-summary">Pending</div>
+                    </div>
+                    <div class="stage-actions">
+                        <button class="btn btn-secondary btn-sm btn-run-stage" onclick="event.stopPropagation(); runSingleStage(4)">Run</button>
+                    </div>
+                </div>
+                <div class="stage-body">
+                    <div class="output-viewer"></div>
+                    <div style="margin-top: 12px;">
+                        <button class="btn btn-secondary btn-sm" onclick="exportCSV(4)">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="stage-card" id="stage-5">
+                <div class="stage-header" onclick="toggleOutput(5)">
+                    <div class="stage-number">5</div>
+                    <div class="stage-info">
+                        <div class="stage-name">Bid Generation</div>
+                        <div class="stage-summary">Pending</div>
+                    </div>
+                    <div class="stage-actions">
+                        <button class="btn btn-secondary btn-sm btn-run-stage" onclick="event.stopPropagation(); runSingleStage(5)">Run</button>
+                    </div>
+                </div>
+                <div class="stage-body">
+                    <div class="output-viewer"></div>
+                    <div style="margin-top: 12px;">
+                        <button class="btn btn-secondary btn-sm" onclick="exportCSV(5)">Export CSV</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
