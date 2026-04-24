@@ -14,7 +14,7 @@ import time
 import webbrowser
 from pathlib import Path
 
-PORT = 5000
+PORT = 5050
 URL = f"http://127.0.0.1:{PORT}"
 ROOT = Path(__file__).parent
 
